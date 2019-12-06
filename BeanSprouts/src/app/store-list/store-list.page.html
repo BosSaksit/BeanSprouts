@@ -1,0 +1,111 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>store-list</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  class="ion-padding">
+    <ion-card class="ion-padding">
+        <ion-item lines="none" >
+          <ion-text >
+        <h1>สินค้าคงเหลือทั้งหมด</h1>
+      </ion-text>
+      </ion-item>
+
+      <ion-row>
+        <ion-col>
+           <ion-select type="text" placeholder="ทั้งหมด" >
+              <ion-select-option value="u">ถั่วงอก</ion-select-option>
+              <ion-select-option value="k">เส้นหมี่</ion-select-option>
+              <ion-select-option value="k">เส้นใหญ่</ion-select-option>
+              <ion-select-option value="k">แผ่นเกี้ยว</ion-select-option>
+
+
+            </ion-select>
+        </ion-col>
+        <ion-col>
+            <ion-button>
+                <ion-icon slot="icon-only" name="search"></ion-icon>
+                </ion-button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col text-center>
+          <ion-card color="secondary">
+              <h1>ถั่วงอก</h1>
+              <h4>80</h4>
+          </ion-card>
+        </ion-col>
+        <ion-col text-center>
+            <ion-card color="warning">
+                <h1>เส้นหมี่</h1>
+                <h4>50</h4>
+            </ion-card>
+          </ion-col>
+        <ion-col text-center>
+            <ion-card color="tertiary">
+                <h1>เส้นใหญ่</h1>
+                <h4>30</h4>
+            </ion-card>
+       </ion-col>
+        <ion-col text-center>
+            <ion-card color="success">
+                <h1>แผ่นเกี้ยว</h1>
+                <h4>40</h4>
+            </ion-card>
+        </ion-col>
+      </ion-row>
+     </ion-card>
+
+     <ion-card class="ion-padding">
+        <ion-row>
+            <ion-col text-center>
+              <h1>รายชื่อสินค้า</h1>
+            </ion-col>
+          </ion-row>
+      
+          <ion-row>
+            <table>
+              <tr>
+                <th>รหัสสินค้า</th>
+                <th>ชื่อสินค้า</th>
+                <th>ราคา</th>
+                <th>แก้ไข</th>
+                
+              </tr>
+      
+              <tr>
+                <td>ถ-0001</td>
+                <td>ถั่วงอก</td>
+                <td>10</td>
+                <td><ion-button color="warning" (click)="gopageStoreEdit()">แก้ไข</ion-button></td>
+               </tr>
+
+               <tr>
+                  <td>ส-0001</td>
+                  <td>เส้นใหญ่</td>
+                  <td>50</td>
+                  <td><ion-button color="warning" (click)="gopageStoreEdit()">แก้ไข</ion-button></td>
+                 </tr>
+                 <tr>
+                    <td>ส-0002</td>
+                    <td>เส้นหมี่</td>
+                    <td>60</td>
+                    <td><ion-button color="warning" (click)="gopageStoreEdit()">แก้ไข</ion-button></td>
+                   </tr>
+            </table>
+          </ion-row>
+          <ion-item lines="none" >
+              <ion-button  slot="end" size="default" (click)="gopageStoreAdd()">
+              <ion-icon slot="icon-only" name="add-circle-outline"></ion-icon>
+              </ion-button>
+              </ion-item>
+
+
+     </ion-card>
+
+
+
+
+</ion-content>
