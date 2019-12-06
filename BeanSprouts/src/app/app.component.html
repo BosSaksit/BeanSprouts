@@ -1,6 +1,6 @@
 <ion-app>
-  <ion-split-pane>
-    <!-- <ion-menu type="overlay">
+
+  <!-- <ion-menu type="overlay">
       <ion-header>
         <ion-toolbar>
           <ion-title>Menu</ion-title>
@@ -19,6 +19,52 @@
         </ion-list>
       </ion-content>
     </ion-menu> -->
-    <ion-router-outlet main></ion-router-outlet>
-  </ion-split-pane>
+
+  <!-- <ion-header>
+    <ion-toolbar>
+      <ion-row>
+        <ion-col>
+          <ion-button (click)="gotoShopList()" shape="round" fill="clear">Shop</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button (click)="gotoShopList()" shape="round" fill="clear">Shop</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-toolbar>
+  </ion-header> -->
+  
+  <!-- <ion-tabs>
+    <ion-tab-bar slot="top">
+      <ion-row>
+        <ion-col>
+            <ion-button (click)="gotoShopList()" shape="round" fill="clear">Shop</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button (click)="gotoShopList()" shape="round" fill="clear">Shop</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-tab-button tab="schedule">
+            <ion-icon name="calendar"></ion-icon>
+            <ion-label>Schedule</ion-label>
+            <ion-badge>6</ion-badge>
+          </ion-tab-button>
+      
+          <ion-tab-button tab="speakers">
+            <ion-icon name="contacts"></ion-icon>
+            <ion-label>Speakers</ion-label>
+          </ion-tab-button>
+      
+          <ion-tab-button tab="map">
+            <ion-icon name="map"></ion-icon>
+            <ion-label>Map</ion-label>
+          </ion-tab-button>
+      
+          <ion-tab-button tab="about">
+            <ion-icon name="information-circle"></ion-icon>
+            <ion-label>About</ion-label>
+          </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs> -->
+  <ion-router-outlet main></ion-router-outlet>
+
 </ion-app>
