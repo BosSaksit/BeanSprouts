@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>shopAdd</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <form [formGroup]="data" (ngSubmit)="AlertDonedata()">
+    <ion-row>
+      <ion-col>
+        <ion-item [class.invalid]="submitRequested && f.idshop.errors">
+          <ion-label position="floating">รหัสสาขา</ion-label>
+          <ion-input type="text" placeholder="รหัสสาขา" formControlName="idshop"></ion-input>
+        </ion-item>
+        <ion-item *ngIf="submitRequested && f.idshop.errors">
+            <span class="invalid-msg">
+              กรอกรหัสสาขา
+            </span>
+          </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item [class.invalid]="submitRequested && f.nameshop.errors">
+          <ion-label position="floating">ชื่อสาขา</ion-label>
+          <ion-input type="text" placeholder="ชื่อสาขา" formControlName="nameshop"></ion-input>
+        </ion-item>
+        <ion-item *ngIf="submitRequested && f.nameshop.errors">
+            <span class="invalid-msg">
+              กรอกชื่อสาขา
+            </span>
+          </ion-item>
+      </ion-col>
+      <ion-col text-center>   
+        <ion-button type="submit" shape="round">ตกลง</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

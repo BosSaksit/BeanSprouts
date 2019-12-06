@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'mainmenu',
+    redirectTo: 'shop-list',
     pathMatch: 'full'
   },
   {
@@ -22,7 +22,11 @@ const routes: Routes = [
   { path: 'truck-add', loadChildren: './truck-add/truck-add.module#TruckAddPageModule' },
   { path: 'truck-edit', loadChildren: './truck-edit/truck-edit.module#TruckEditPageModule' },
   { path: 'order', loadChildren: './order/order.module#OrderPageModule' },
-  { path: 'mainmenu', loadChildren: './mainmenu/mainmenu.module#MainmenuPageModule' }
+  { path: 'mainmenu', loadChildren: './mainmenu/mainmenu.module#MainmenuPageModule' },
+  { path: 'shop-list', loadChildren: './shop-list/shop-list.module#ShopListPageModule' },
+  { path: 'shop-add', loadChildren: './shop-add/shop-add.module#ShopAddPageModule' },
+  { path: 'product-list', loadChildren: './product-list/product-list.module#ProductListPageModule' },
+  { path: 'product-add', loadChildren: './product-add/product-add.module#ProductAddPageModule' }
 ];
 
 @NgModule({

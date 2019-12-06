@@ -1,0 +1,103 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>รายการสินค้า</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card text-center>
+    <h2 style="color: black">จำนวนสินค้าทั้งหมด</h2>
+    <ion-row>
+      <ion-col>
+        <ion-card style="background-color: aqua; color: black">
+          <br>
+          <ion-label>ถั่วงอก</ion-label>
+          <br><br>
+          <ion-label>800</ion-label>
+          <br><br>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card style="background-color: burlywood; color: black">
+          <br>
+          <ion-label>เส้นหมี่</ion-label>
+          <br><br>
+          <ion-label>50</ion-label>
+          <br><br>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card style="background-color:coral; color: black">
+          <br>
+          <ion-label>เส้นใหญ่</ion-label>
+          <br><br>
+          <ion-label>100</ion-label>
+          <br><br>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card style="background-color:lightgreen; color: black">
+          <br>
+          <ion-label>แผ่นเกี๊ยว</ion-label>
+          <br><br>
+          <ion-label>200</ion-label>
+          <br><br>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <ion-row>
+    <ion-col size="11">
+      <ion-searchbar></ion-searchbar>
+    </ion-col>
+    <ion-col>
+      <ion-button>
+        <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-card text-center>
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col>
+        <h2 style="color: black">รายการสินค้า</h2>
+      </ion-col>
+      <ion-col text-end>
+        <ion-button (click)="gotoAddProduct()" shape="round">+ เพิ่มสินค้า</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row style="color: black">
+      <ion-col>
+        <h4>รหัสสินค้า</h4>
+      </ion-col>
+      <ion-col>
+        <h4>ชื่อสินค้า</h4>
+      </ion-col>
+      <ion-col>
+        <h4>ราคา</h4>
+      </ion-col>
+      <ion-col>
+        <h4>แก่ไข</h4>
+      </ion-col>
+    </ion-row>
+
+    <ion-row style="color: black">
+      <ion-col>
+        <ion-label>p-001201</ion-label>
+      </ion-col>
+      <ion-col>
+        <ion-label>ถั่วงอก</ion-label>
+      </ion-col>
+      <ion-col>
+        <ion-label>20</ion-label>
+      </ion-col>
+      <ion-col>
+        <ion-button size="small" color="warning">
+          <ion-icon name="create"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>
