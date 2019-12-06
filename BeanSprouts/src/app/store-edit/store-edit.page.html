@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>store-edit</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="ion-padding">
+        <ion-row color="primary" justify-content-center>
+          <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+            <div text-center>
+              <h3>แก้ไขสินค้า</h3>
+            </div>
+            <div>
+              <ion-label>ชื่อสินค้า</ion-label>
+              <ion-input type="text" placeholder="ชื่อสินค้า"></ion-input>
+              <ion-label>จำนวน</ion-label>
+              <ion-input type="text" placeholder="จำนวน"></ion-input>
+              <ion-label>ราคา</ion-label>
+              <ion-input type="text" placeholder="ราคา"></ion-input>
+            </div>
+            <div>
+              <ion-button size="large" expand="block" (click)="presentAlertConfirm()">แก้ไข</ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+</ion-content>
