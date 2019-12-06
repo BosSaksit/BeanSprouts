@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>order</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <table>
+      <tr>
+        <th>ลููกค้า</th>
+        <th>เบอร์โทร</th>
+        <th *ngFor="let p of productData; let i = index">{{ p.productName }}</th>
+      </tr>
+      <tr *ngFor="let c of customerData">
+
+        <th>{{ c.customerName }}</th>
+        <th>{{ c.customerTel }}</th>
+        <th>
+          <ion-input type="text"></ion-input>
+        </th>
+        <th>
+          <ion-input type="text"></ion-input>
+        </th>
+        <th>
+          <ion-input type="text"></ion-input>
+        </th>
+        <th>
+          <ion-input type="text"></ion-input>
+        </th>
+        <th>
+          <ion-input type="text"></ion-input>
+        </th>
+        <th>
+          <ion-input type="text"></ion-input>
+        </th>
+      </tr>
+    </table>
+    <br><br>
+    <ion-button (click)="donedata()">ยืนยัน</ion-button>
+  </ion-row>
+</ion-content>
