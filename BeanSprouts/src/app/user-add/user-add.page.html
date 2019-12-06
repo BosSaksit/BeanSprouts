@@ -5,5 +5,36 @@
 </ion-header>
 
 <ion-content>
-
+  <ion-card class="ion-padding">
+    <ion-row color="primary" justify-content-center>
+      <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+        <div text-center>
+          <h3>เพิ่มพนักงาน</h3>
+        </div>
+        <div>
+          <ion-label>Username</ion-label>
+          <ion-input type="text" placeholder="Username"></ion-input>
+          <ion-label>Password</ion-label>
+          <ion-input type="text" placeholder="Password"></ion-input>
+          <ion-label>ชื่อพนักงาน</ion-label>
+          <ion-input type="text" placeholder="ชื่อพนักงาน"></ion-input>
+          <ion-label>เบอร์โทร</ion-label>
+          <ion-input type="text" placeholder="เบอร์โทร"></ion-input>
+          <ion-label>สิทธิ์</ion-label>
+          <ion-select type="text" placeholder="เลือกสิทธิ์" >
+            <ion-select-option value="u">Accouting</ion-select-option>
+            <ion-select-option value="k">Truck</ion-select-option>
+          </ion-select>
+          <ion-label>สาขา</ion-label>
+          <ion-select type="text" placeholder="เลือกสาขา" >
+            <ion-select-option value="u">อุดร</ion-select-option>
+            <ion-select-option value="k">ขอนแก่น</ion-select-option>
+          </ion-select>
+        </div>
+        <div>
+          <ion-button size="large" expand="block">บันทึก</ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-card>
 </ion-content>
