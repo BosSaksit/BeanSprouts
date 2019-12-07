@@ -1,0 +1,106 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>return-product-add</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-card class="ion-padding">
+    <ion-grid>
+    <ion-row >
+        <ion-col text-center>
+          <h1>เพิ่มลูกค้าที่ทำรายการลดหนี้</h1>
+        </ion-col>
+      </ion-row>
+
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="2" >
+      <ion-label>เลือกสาขา</ion-label>
+       <ion-select type="text" placeholder="เลือกสาขา" >
+          <ion-select-option value="u">ถั่วงอก</ion-select-option>
+          <ion-select-option value="k">เส้นหมี่</ion-select-option>
+          <ion-select-option value="k">เส้นใหญ่</ion-select-option>
+          <ion-select-option value="k">แผ่นเกี้ยว</ion-select-option>
+ </ion-select>
+    </ion-col>
+    <ion-col size="2">
+        <ion-label>เลือกสาย</ion-label>
+        <ion-select type="text" placeholder="เลือกสาย" >
+           <ion-select-option value="u">ถั่วงอก</ion-select-option>
+           <ion-select-option value="k">เส้นหมี่</ion-select-option>
+           <ion-select-option value="k">เส้นใหญ่</ion-select-option>
+           <ion-select-option value="k">แผ่นเกี้ยว</ion-select-option>
+  </ion-select>
+     </ion-col>
+     <ion-col size="2" >
+        <ion-label>เลือกลูกค้า</ion-label>
+        <ion-select type="text" placeholder="เลือกลูกค้า" >
+           <ion-select-option value="u">ถั่วงอก</ion-select-option>
+           <ion-select-option value="k">เส้นหมี่</ion-select-option>
+           <ion-select-option value="k">เส้นใหญ่</ion-select-option>
+           <ion-select-option value="k">แผ่นเกี้ยว</ion-select-option>
+  </ion-select>
+     </ion-col>
+    
+  </ion-row></ion-grid>
+    </ion-card>
+
+    <ion-card class="ion-padding">
+      <ion-grid>
+        <ion-row class="ion-justify-content-center">
+            <ion-col size="2">
+                <ion-label>สินค้า</ion-label>
+               <ion-select type="text" placeholder="สินค้า" >
+                  <ion-select-option value="u">ถั่วงอก</ion-select-option>
+                  <ion-select-option value="k">เส้นหมี่</ion-select-option>
+                  <ion-select-option value="k">เส้นใหญ่</ion-select-option>
+                  <ion-select-option value="k">แผ่นเกี้ยว</ion-select-option>
+         </ion-select>
+            </ion-col>
+            <ion-col size="2">
+                <ion-label>จำนวน</ion-label>
+                <ion-select type="text" placeholder="จำนวน" >
+                   <ion-select-option value="u">ถั่วงอก</ion-select-option>
+                   <ion-select-option value="k">เส้นหมี่</ion-select-option>
+                   <ion-select-option value="k">เส้นใหญ่</ion-select-option>
+                   <ion-select-option value="k">แผ่นเกี้ยว</ion-select-option>
+          </ion-select>
+             </ion-col>
+             <ion-col size="2">
+                <ion-label>สถานะการลดหนี้</ion-label>
+                <ion-select type="text" placeholder="สถานะการลดหนี้" >
+                   <ion-select-option value="u">ถั่วงอก</ion-select-option>
+                   <ion-select-option value="k">เส้นหมี่</ion-select-option>
+                   <ion-select-option value="k">เส้นใหญ่</ion-select-option>
+                   <ion-select-option value="k">แผ่นเกี้ยว</ion-select-option>
+          </ion-select>
+             </ion-col>
+            
+             <!-- <ion-col class="ion-align-self-end" size="1" push="3">
+                <ion-item lines="none" >
+               <ion-button  size="default" >
+                  <ion-icon slot="icon-only"  name="add-circle-outline"></ion-icon>
+               </ion-button></ion-item>
+             </ion-col> -->
+          </ion-row>
+</ion-grid>
+
+      </ion-card>
+<ion-row class="ion-justify-content-center">
+  <ion-col size="1">
+     
+        <ion-button  color="success" (click)="presentAlertConfirm()">บันทึก</ion-button>
+
+
+        <!-- <ion-button  size="default" >
+        <ion-icon slot="icon-only"  name="add-circle-outline"></ion-icon>
+     </ion-button> -->
+</ion-col>
+<!-- <ion-col size="2">
+    <ion-button  size="default" >
+        <ion-icon slot="icon-only"  name="add-circle-outline"></ion-icon>
+     </ion-button>
+</ion-col> -->
+</ion-row>
+</ion-content>

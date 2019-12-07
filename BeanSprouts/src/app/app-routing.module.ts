@@ -30,7 +30,10 @@ const routes: Routes = [
   { path: 'shop-list', loadChildren: './shop-list/shop-list.module#ShopListPageModule' },
   { path: 'shop-add', loadChildren: './shop-add/shop-add.module#ShopAddPageModule' },
   { path: 'product-list', loadChildren: './product-list/product-list.module#ProductListPageModule' },
-  { path: 'product-add', loadChildren: './product-add/product-add.module#ProductAddPageModule' }
+  { path: 'product-add', loadChildren: './product-add/product-add.module#ProductAddPageModule' },
+  { path: 'return-product-list', loadChildren: './return-product-list/return-product-list.module#ReturnProductListPageModule' },
+  { path: 'return-product-add', loadChildren: './return-product-add/return-product-add.module#ReturnProductAddPageModule' }
+
 
 
 ];
