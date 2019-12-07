@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { CallapiService } from '../service/callapi.service';
 
 @Component({
   selector: 'app-product-list',
@@ -8,7 +9,9 @@ import { Router } from '@angular/router';
 })
 export class ProductListPage implements OnInit {
 
-  constructor(public router:Router) { }
+  constructor(public router:Router, public callapi:CallapiService) { 
+    this.callapi.checkStateMenuBar = "1";
+  }
 
   ngOnInit() {
   }

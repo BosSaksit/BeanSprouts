@@ -19,13 +19,16 @@ export class OrderPage implements OnInit {
   orderData: order;
   orderAll: order[] = [];
   customerAll: customer[] = [];
+
   constructor(public callapi: CallapiService) {
     this.orderData = {
       custoId: "",
       custoName: "",
       custoTel: "",
       orderProduct: []
-    }
+    };
+    this.callapi.checkStateMenuBar = "1";
+
   }
 
   ngOnInit() {

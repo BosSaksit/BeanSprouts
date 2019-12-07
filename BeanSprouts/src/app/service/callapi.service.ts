@@ -8,9 +8,13 @@ import { product } from '../models/product';
 })
 export class CallapiService {
 
-  public static host:string = "https://localhost:5001/api/"
+  public static host:string = "https://localhost:5001/api/";
 
-  constructor(public http:HttpClient) { }
+  public checkStateMenuBar : any;
+
+  constructor(public http:HttpClient) { 
+    this.checkStateMenuBar = "1";
+  }
 
   public GetAllCustomer(){
     return this.http.get<customer>(CallapiService.host + 'Customer/GetAllCustomer');
