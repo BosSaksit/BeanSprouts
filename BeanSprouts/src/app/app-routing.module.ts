@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'user-list',
+    redirectTo: 'return-product-list',
     pathMatch: 'full'
   },
   {
@@ -26,11 +26,14 @@ const routes: Routes = [
   { path: 'loginpage', loadChildren: './loginpage/loginpage.module#LoginpagePageModule' },
   { path: 'store-list', loadChildren: './store-list/store-list.module#StoreListPageModule' },
   { path: 'store-add', loadChildren: './store-add/store-add.module#StoreAddPageModule' },
-  { path: 'store-edit', loadChildren: './store-edit/store-edit.module#StoreEditPageModule' }
+  { path: 'store-edit', loadChildren: './store-edit/store-edit.module#StoreEditPageModule' },
   { path: 'shop-list', loadChildren: './shop-list/shop-list.module#ShopListPageModule' },
   { path: 'shop-add', loadChildren: './shop-add/shop-add.module#ShopAddPageModule' },
   { path: 'product-list', loadChildren: './product-list/product-list.module#ProductListPageModule' },
-  { path: 'product-add', loadChildren: './product-add/product-add.module#ProductAddPageModule' }
+  { path: 'product-add', loadChildren: './product-add/product-add.module#ProductAddPageModule' },
+  { path: 'return-product-list', loadChildren: './return-product-list/return-product-list.module#ReturnProductListPageModule' },
+  { path: 'return-product-add', loadChildren: './return-product-add/return-product-add.module#ReturnProductAddPageModule' }
+
 
 
 ];

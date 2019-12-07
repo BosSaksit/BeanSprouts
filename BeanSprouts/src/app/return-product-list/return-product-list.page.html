@@ -1,0 +1,96 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>return-product-list</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  
+      <ion-row>
+          <ion-col>
+             <ion-select type="text" placeholder="สาขา" >
+                <ion-select-option value="u">ถั่วงอก</ion-select-option>
+                <ion-select-option value="k">เส้นหมี่</ion-select-option>
+                <ion-select-option value="k">เส้นใหญ่</ion-select-option>
+                <ion-select-option value="k">แผ่นเกี้ยว</ion-select-option>
+             </ion-select>
+          </ion-col>
+
+          <ion-col>
+              <ion-select type="text" placeholder="สาย" >
+                 <ion-select-option value="u">ถั่วงอก</ion-select-option>
+                 <ion-select-option value="k">เส้นหมี่</ion-select-option>
+                 <ion-select-option value="k">เส้นใหญ่</ion-select-option>
+                 <ion-select-option value="k">แผ่นเกี้ยว</ion-select-option>
+              </ion-select>
+           </ion-col>
+           <ion-col>
+              <ion-button>
+                  <ion-icon slot="icon-only" name="search"></ion-icon>
+                  </ion-button>
+          </ion-col>
+          <ion-col>
+              <ion-item lines="none" >
+                  <ion-button color="success" slot="end" size="default" (click)="gopageStoreAdd()">
+                  ออกใบลดหนี้
+                  </ion-button>
+                  </ion-item>
+         </ion-col>
+      </ion-row>
+  
+      <ion-card class="ion-padding">
+          <ion-row>
+              <ion-col text-center>
+                <h1>รายการลดหนี้</h1>
+              </ion-col>
+            </ion-row>
+        
+            <ion-row>
+              <table>
+                <tr>
+                  <th>รหัสลูกค้า</th>
+                  <th>ชื่อลูกค้า</th>
+                  <th>สินค้า</th>
+                  <th>สาขา</th>
+                  <th>สาย</th>
+                  <th>สถานะการลดหนี้</th>
+                  <th>จำนวน</th>
+                  <th>พิมพ์</th>
+                </tr>
+        
+                <tr>
+                  <td>Cs001</td>
+                  <td>นาย พรชัย </td>
+                  <td>ถั่วงอก</td>
+                  <td>อุดร</td>
+                  <td>อุดร1</td>
+                  <td>ส่วนลด</td>
+                  <td>10</td>
+                  <td><ion-button  (click)="gopageStoreEdit()">พิมพ์</ion-button></td>
+                 </tr>
+  
+                 <tr>
+                    <td>Cs002</td>
+                    <td>นาย ดำรง</td>
+                    <td>เส้นใหญ่</td>
+                    <td>อุดร</td>
+                    <td>อุดร2</td>
+                    <td>ของเสีย</td>
+                    <td>5</td>
+                    <td><ion-button  (click)="gopageStoreEdit()">พิมพ์</ion-button></td>
+                   </tr>
+                   <tr>
+                      <td>Cs003</td>
+                      <td>นาย ขาวดี</td>
+                      <td>เส้นหมี่</td>
+                      <td>อุดร</td>
+                      <td>อุดร3</td>
+                      <td>เปลี่ยนสินค้า</td>
+                      <td>20</td>
+                      <td><ion-button  (click)="gopageStoreEdit()">พิมพ์</ion-button></td>
+                     </tr>
+              </table>
+            </ion-row>
+      </ion-card>
+
+</ion-content>
