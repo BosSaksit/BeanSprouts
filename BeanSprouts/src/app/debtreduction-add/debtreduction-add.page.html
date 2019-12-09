@@ -1,0 +1,101 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>debtreductionAdd</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card text-center style="color: black">
+    <h2>เพิ่มข้อมูลการลดหนี้</h2>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label>สาขา</ion-label>
+          <ion-select interface="popover" value="brown" okText="ตกลง">
+            <ion-select-option value="brown">อุดรธานี</ion-select-option>
+            <ion-select-option value="blonde">ขอนแก่น</ion-select-option>
+            <ion-select-option value="black">สกลนคร</ion-select-option>
+            <ion-select-option value="red">หนองคาย</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-label>สาย</ion-label>
+          <ion-select interface="popover" value="brown" okText="ตกลง">
+            <ion-select-option value="brown">01</ion-select-option>
+            <ion-select-option value="blonde">02</ion-select-option>
+            <ion-select-option value="black">03</ion-select-option>
+            <ion-select-option value="red">04</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-label>ลูกค้า</ion-label>
+          <ion-select interface="popover" value="brown" okText="ตกลง">
+            <ion-select-option value="brown">เจ้ต่าย</ion-select-option>
+            <ion-select-option value="blonde">เฮียไก่</ion-select-option>
+            <ion-select-option value="black">ป้าแดง</ion-select-option>
+            <ion-select-option value="red">หนูเล็ก</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-label>จำนวนรายการสินค้า : </ion-label>
+          <ion-input [(ngModel)]="countRow" type="number"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="1">
+        <ion-button (click)="createRow()" expand="block">ตกลง</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <br><br>
+
+  <div *ngIf="countRow != null">
+    <ion-card style="color: black" *ngFor="let item of arr; index as i">
+      <ion-row>
+        <h4>รายการที่ {{ i+1 }}</h4>
+        <ion-col>
+          <ion-item>
+            <ion-label>สินค้า</ion-label>
+            <ion-select interface="popover" value="brown" okText="ตกลง">
+              <ion-select-option value="brown">ถั่วงอก</ion-select-option>
+              <ion-select-option value="blonde">เส้นใหญ่</ion-select-option>
+              <ion-select-option value="black">เส้นเล็ก</ion-select-option>
+              <ion-select-option value="red">เส้นหมี่ขาว</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+        <ion-col size="3">
+          <ion-item>
+            <ion-label>จำนวน : </ion-label>
+            <ion-input type="number"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-item>
+            <ion-label>ประเภทการลดหนี้</ion-label>
+            <ion-select interface="popover" value="brown" okText="ตกลง">
+              <ion-select-option value="brown">ส่วนลด</ion-select-option>
+              <ion-select-option value="blonde">ของเสีย</ion-select-option>
+              <ion-select-option value="black">เปลี่ยนสินค้า</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col>
+        <ion-button shape="block">ตกลง</ion-button>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+  </div>
+
+
+</ion-content>

@@ -32,8 +32,10 @@ const routes: Routes = [
   { path: 'product-list', loadChildren: './product-list/product-list.module#ProductListPageModule' },
   { path: 'product-add', loadChildren: './product-add/product-add.module#ProductAddPageModule' },
   { path: 'return-product-list', loadChildren: './return-product-list/return-product-list.module#ReturnProductListPageModule' },
-  { path: 'return-product-add', loadChildren: './return-product-add/return-product-add.module#ReturnProductAddPageModule' }
-
+  { path: 'return-product-add', loadChildren: './return-product-add/return-product-add.module#ReturnProductAddPageModule' },
+  { path: 'transfer', loadChildren: './transfer/transfer.module#TransferPageModule' },
+  { path: 'debtreduction-list', loadChildren: './debtreduction-list/debtreduction-list.module#DebtreductionListPageModule' },
+  { path: 'debtreduction-add', loadChildren: './debtreduction-add/debtreduction-add.module#DebtreductionAddPageModule' }
 
 
 ];

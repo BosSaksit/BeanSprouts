@@ -70,4 +70,12 @@ export class AppComponent {
     this.router.navigate(['/user-list']);
   }
 
+  gotoTransfer(){
+    this.router.navigate(['/transfer']);
+  }
+
+  gotodebtReduc(){
+    this.router.navigate(['/debtreduction-list']);
+  }
+
 }
