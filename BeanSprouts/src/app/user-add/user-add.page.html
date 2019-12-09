@@ -13,26 +13,26 @@
         </div>
         <div>
           <ion-label>Username</ion-label>
-          <ion-input type="text" placeholder="Username"></ion-input>
+          <ion-input class="input1" type="text" placeholder="Username"></ion-input>
           <ion-label>Password</ion-label>
-          <ion-input type="text" placeholder="Password"></ion-input>
+          <ion-input class="input1" type="text" placeholder="Password"></ion-input>
           <ion-label>ชื่อพนักงาน</ion-label>
-          <ion-input type="text" placeholder="ชื่อพนักงาน"></ion-input>
+          <ion-input class="input1" type="text" placeholder="ชื่อพนักงาน"></ion-input>
           <ion-label>เบอร์โทร</ion-label>
-          <ion-input type="text" placeholder="เบอร์โทร"></ion-input>
+          <ion-input class="input1" type="text" placeholder="เบอร์โทร"></ion-input>
           <ion-label>สิทธิ์</ion-label>
-          <ion-select type="text" placeholder="เลือกสิทธิ์" >
+          <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" type="text" placeholder="เลือกสิทธิ์" >
             <ion-select-option value="u">Accouting</ion-select-option>
             <ion-select-option value="k">Truck</ion-select-option>
           </ion-select>
           <ion-label>สาขา</ion-label>
-          <ion-select type="text" placeholder="เลือกสาขา" >
+          <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" type="text" placeholder="เลือกสาขา" >
             <ion-select-option value="u">อุดร</ion-select-option>
             <ion-select-option value="k">ขอนแก่น</ion-select-option>
           </ion-select>
         </div>
         <div>
-          <ion-button size="large" expand="block">บันทึก</ion-button>
+          <ion-button size="large" expand="block" (click)="presentAlert()">บันทึก</ion-button>
         </div>
       </ion-col>
     </ion-row>

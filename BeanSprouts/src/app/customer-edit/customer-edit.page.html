@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>CustomerEdit</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="ion-padding">
+    <ion-row color="primary" justify-content-center>
+      <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+        <div text-center *ngIf="check == 1">
+          <h3>ข้อมูลลูกค้า</h3>
+        </div>
+
+        <div text-center *ngIf="check == 2">
+          <h3>แก้ไขลูกค้า</h3>
+        </div>
+
+        <div>
+          <ion-label>ชื่อลูกค้า</ion-label>
+          <ion-input class="input1" type="text" placeholder="ชื่อลูกค้า"></ion-input>
+          <ion-label>ที่อยู่</ion-label>
+          <ion-input class="input1" type="text" placeholder="ที่อยู่"></ion-input>
+          <ion-label>เบอร์โทร</ion-label>
+          <ion-input class="input1" type="text" placeholder="เบอร์โทร"></ion-input>
+          <ion-label>ตลาด</ion-label>
+          <ion-input class="input1" type="text" placeholder="ตลาด"></ion-input>
+          <ion-label>สาย</ion-label>
+          <ion-select type="text" placeholder="เลือกสาย">
+            <ion-select-option value="u">เทศบาล 2</ion-select-option>
+            <ion-select-option value="k">อุดร-ไทยอิสาน</ion-select-option>
+          </ion-select>
+        </div>
+
+        <div>
+          <ion-button size="large" expand="block">แก้ไข</ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+</ion-content>

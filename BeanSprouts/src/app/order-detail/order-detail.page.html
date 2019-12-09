@@ -1,0 +1,482 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>orderDetail</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- 
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        <ion-row>
+          <h2>ข้อมูลการสั่งซื้อ</h2>
+        </ion-row>
+      </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+
+    </ion-card-content>
+  </ion-card> -->
+
+  <ion-content class="ion-padding">
+
+      <ion-card class="ion-padding">
+        <ion-item>
+          <ion-row>
+            <h2>ข้อมูลการสั่งซื้อ</h2>
+          </ion-row>
+        </ion-item>
+        <ion-row>
+          <ion-col size="12" size-sm>
+            <ion-label>สาขา</ion-label>
+            <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" type="text" placeholder="เลือกสาขา">
+              <ion-select-option value="u">อุดร</ion-select-option>
+              <ion-select-option value="k">ขอนแก่น</ion-select-option>
+            </ion-select>
+          </ion-col>
+    
+          <ion-col size="12" size-sm>
+            <ion-label>สาย</ion-label>
+            <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" type="text" placeholder="เลือกสาย">
+              <ion-select-option value="u">เทศบาล 2</ion-select-option>
+              <ion-select-option value="k">อุดร-ไทยอิสาน</ion-select-option>
+            </ion-select>
+          </ion-col>
+    
+        </ion-row>
+    
+        <ion-row>
+          <ion-col size="12" size-sm text-end>
+            <ion-button color="primary">
+              <ion-icon name="search"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    
+      <ion-card class="ion-padding">
+        <ion-row>
+          <ion-col text-center>
+            <span>ตารางเก็บเงินสายอุดร-อิสาณไทย รอบบิลวันที่ 05-10/สิงหาคม/2562</span><br>
+            <span>วันที่ 11 เดือน ตุลาคม พ.ศ. 2562</span>
+          </ion-col>
+        </ion-row>
+        <ion-grid>
+    
+          <ion-row>
+            <ion-segment scrollable>
+              <table class="fixed_header">
+                <thead>
+                  <tr>
+                    <th>ลำดับ</th>
+                    <th>รายชื่อลูกค้า</th>
+                    <th>โซน</th>
+                    <th>เบอร์โทร</th>
+                    <th>ฐานถั่วงอก</th>
+                    <th>ถั่วงอก</th>
+                    <th>เส้นใหญ่ดอกบัว</th>
+                    <th>เส้นเล็กดอกบัว</th>
+                    <th>วุ้นเส้นมังกร</th>
+                    <th>หมี่ขาวสามหมอ</th>
+                    <th>แผ่นเกี๊ยว</th>
+                    <th>บะหมี่เหลือง</th>
+                    <th>เส่นแพคดาว</th>
+                    <th>เส้นยาว</th>
+                    <th>เส้นผัดไท</th>
+                    <th>เส้นกั๋วยจั๊บ</th>
+                    <th>เส้นก๋วยจั๊บญวณ</th>
+                    <th>เส้นเล็กมะลิ</th>
+                    <th>หมี่ขาวมะลิ</th>
+                    <th></th>
+                    <th></th>
+                    <th>หมายเหตุ</th>
+    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>เจ้ดำ</td>
+                    <td>อุดร-ไทยอิสาณ</td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>โอน</td>
+    
+    
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>เจ้พร</td>
+                    <td>อุดร-ไทยอิสาณ</td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>โอน</td>
+    
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>เจ้ฟ้า</td>
+                    <td>อุดร-ไทยอิสาณ</td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>โอน</td>
+    
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>เจ้หนาว</td>
+                    <td>อุดร-ไทยอิสาณ</td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>โอน</td>
+    
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>เจ้นอน</td>
+                    <td>อุดร-ไทยอิสาณ</td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>โอน</td>
+    
+                  </tr>
+                  <br>
+                  <tr>
+                    <th colspan="5"></th>
+                    <th>ถั่วงอก</th>
+                    <th>เส้นใหญ่ดอกบัว</th>
+                    <th>เส้นเล็กดอกบัว</th>
+                    <th>วุ้นเส้นมังกร</th>
+                    <th>หมี่ขาวสามหมอ</th>
+                    <th>แผ่นเกี๊ยว</th>
+                    <th>บะหมี่เหลือง</th>
+                    <th>เส่นแพคดาว</th>
+                    <th>เส้นยาว</th>
+                    <th>เส้นผัดไท</th>
+                    <th>เส้นกั๋วยจั๊บ</th>
+                    <th>เส้นก๋วยจั๊บญวณ</th>
+                    <th>เส้นเล็กมะลิ</th>
+                    <th>หมี่ขาวมะลิ</th>
+                    <th colspan="2" rowspan="2" style="text-align: center; background-color: white;">รวม</th>
+                    <th rowspan="2" style="background-color: white;"> </th>
+                  </tr>
+    
+                  <tr>
+                    <td colspan="5"></td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+                    <td>
+                      <ion-input value=""></ion-input>
+                    </td>
+    
+                  </tr>
+                </tbody>
+              </table>
+            </ion-segment>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+      <ion-row>
+        <ion-button color="warning" (click)="gotoEditOrder()">แก้ไข</ion-button>
+        <ion-button color="primary">พิมพ์</ion-button>
+      </ion-row>
+    
+    </ion-content>
