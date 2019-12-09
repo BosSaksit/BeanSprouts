@@ -30,7 +30,10 @@ const routes: Routes = [
   { path: 'shop-list', loadChildren: './shop-list/shop-list.module#ShopListPageModule' },
   { path: 'shop-add', loadChildren: './shop-add/shop-add.module#ShopAddPageModule' },
   { path: 'product-list', loadChildren: './product-list/product-list.module#ProductListPageModule' },
-  { path: 'product-add', loadChildren: './product-add/product-add.module#ProductAddPageModule' }
+  { path: 'product-add', loadChildren: './product-add/product-add.module#ProductAddPageModule' },
+  { path: 'transfer', loadChildren: './transfer/transfer.module#TransferPageModule' },
+  { path: 'debtreduction-list', loadChildren: './debtreduction-list/debtreduction-list.module#DebtreductionListPageModule' },
+  { path: 'debtreduction-add', loadChildren: './debtreduction-add/debtreduction-add.module#DebtreductionAddPageModule' }
 
 
 ];
