@@ -7,12 +7,12 @@
 <ion-content class="ion-padding">
   <ion-card class="ion-padding">
     <ion-row>
-      <ion-col size="5">
+      <ion-col size="12" size-sm>
         <ion-label>ชื่อพนักงาน</ion-label>
-        <ion-input type="text" placeholder="ค้นหาชื่อพนักงาน"></ion-input>
+        <ion-input class="input1" placeholder="ค้นหาชื่อพนักงาน"></ion-input>
       </ion-col>
 
-      <ion-col size="5">
+      <ion-col size="12" size-sm>
         <ion-label>สาขา</ion-label>
         <ion-select interface="popover" type="text" placeholder="เลือกสาขา" >
             <ion-select-option value="brown">อุดรธานี</ion-select-option>
@@ -22,16 +22,19 @@
         </ion-select>
       </ion-col>
 
-      <ion-col size="2" style="margin: auto;">
-        <ion-button color="primary">ค้นหา</ion-button>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12" size-sm text-end>
+        <ion-button color="primary">
+          <ion-icon name="search"></ion-icon>
+        </ion-button>
       </ion-col>
-
     </ion-row>
   </ion-card>
 
   <ion-row>
-    <ion-col size="2" >
-      <ion-button color="primary" (click)="gotoAddUser()">เพิ่มพนักงาน</ion-button>
+    <ion-col size="2">
+      <ion-button size="12" color="primary" (click)="gotoAddUser()">เพิ่มพนักงาน</ion-button>
     </ion-col>
   </ion-row>
 
@@ -41,31 +44,67 @@
         <h1>รายชื่อพนักงาน</h1>
       </ion-col>
     </ion-row>
-
-    <ion-row>
-      <table>
-        <tr>
-          <th>รหัสพักงาน</th>
-          <th>ชื่อพนักงาน</th>
-          <th>เบอร์โทร</th>
-          <th>สิทธิ์</th>
-          <th>สาขา</th>
-          <th>ดูข้อมูล</th>
-          <th>แก้ไข</th>
-        </tr>
-
-        <tr>
-          <td>001</td>
-          <td>ทองดี มีชัย</td>
-          <td>0865325478</td>
-          <td>Accouting</td>
-          <td>อุดร</td>
-          <td><ion-button color="secondary">ดูข้อมูล</ion-button></td>
-          <td><ion-button color="warning">แก้ไข</ion-button></td>
-          <td><ion-button color="warning">แก้ไข</ion-button></td>
-        </tr>
-      </table>
-    </ion-row>
+    
+    <ion-grid>
+      <ion-row>
+        <ion-segment scrollable>
+          <table class="fixed_header">
+            <thead>
+              <tr>
+                <th>รหัสพักงาน</th>
+                <th>ชื่อพนักงาน</th>
+                <th>เบอร์โทร</th>
+                <th>สิทธิ์</th>
+                <th>สาขา</th>
+                <th width="5%">ดูข้อมูล</th>
+                <th width="5%">แก้ไข</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Us001</td>
+                <td>ทองดี มีชัย</td>
+                <td>0865325478</td>
+                <td>Accouting</td>
+                <td>อุดร</td>
+                <td>
+                  <ion-button color="secondary" (click)="gotoDetailUser()">ดูข้อมูล</ion-button>
+                </td>
+                <td>
+                  <ion-button color="warning" (click)="gotoEditUser()">แก้ไข</ion-button>
+                </td>
+              </tr>
+              <tr>
+                <td>Us002</td>
+                <td>ทองดี มีชัย</td>
+                <td>0865325478</td>
+                <td>Accouting</td>
+                <td>อุดร</td>
+                <td>
+                  <ion-button color="secondary" (click)="gotoDetailUser()">ดูข้อมูล</ion-button>
+                </td>
+                <td>
+                  <ion-button color="warning" (click)="gotoEditUser()">แก้ไข</ion-button>
+                </td>
+              </tr>
+              <tr>
+                <td>Us003</td>
+                <td>ทองดี มีชัย</td>
+                <td>0865325478</td>
+                <td>Accouting</td>
+                <td>อุดร</td>
+                <td>
+                  <ion-button color="secondary" (click)="gotoDetailUser()">ดูข้อมูล</ion-button>
+                </td>
+                <td>
+                  <ion-button color="warning" (click)="gotoEditUser()">แก้ไข</ion-button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </ion-segment>
+      </ion-row>
+    </ion-grid>
   </ion-card>
-
+  
 </ion-content>

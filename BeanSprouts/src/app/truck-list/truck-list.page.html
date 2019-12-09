@@ -4,6 +4,115 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
+    <ion-card class="ion-padding">
+      <ion-row>
+        <ion-col size="12" size-sm>
+          <ion-label>สาขา</ion-label>
+          <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" type="text" placeholder="เลือกสาขา">
+            <ion-select-option value="u">อุดร</ion-select-option>
+            <ion-select-option value="k">ขอนแก่น</ion-select-option>
+          </ion-select>
+        </ion-col>
+  
+        <ion-col size="12" size-sm>
+          <ion-label>สาย</ion-label>
+          <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" type="text" placeholder="เลือกสาย">
+            <ion-select-option value="u">เทศบาล 2</ion-select-option>
+            <ion-select-option value="k">อุดร-ไทยอิสาน</ion-select-option>
+          </ion-select>
+        </ion-col>
+  
+      </ion-row>
 
-</ion-content>
+      <ion-row>
+          <ion-col size="12" size-sm text-end>
+              <ion-button color="primary">
+                <ion-icon name="search"></ion-icon>
+              </ion-button>
+            </ion-col>
+      </ion-row>
+    </ion-card>
+  
+    <ion-row>
+      <ion-col size="2">
+        <ion-button color="primary" (click)="gotoAddTruck()">เพิ่มคนขับรถ</ion-button>
+      </ion-col>
+    </ion-row>
+  
+    <ion-card class="ion-padding">
+      <ion-row>
+        <ion-col text-center>
+          <h1>รายชื่อคนขับรถ</h1>
+        </ion-col>
+      </ion-row>
+  
+      <ion-grid >
+
+      <ion-row>
+        <ion-segment scrollable>
+        <table class="fixed_header">
+          <thead>
+          <tr>
+            <th>รหัสคนขับรถ</th>
+            <th>ชื่อคนขับรถ</th>
+            <th>เลขทะเบียนรถ</th>
+            <th>สาย</th>
+            <th>เบอร์โทร</th>
+            <th>สาขา</th>
+            <th width="5%">ดูข้อมูล</th>
+            <th width="5%">แก้ไข</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ca001</td>
+            <td>ทองดี มีชัย</td>
+            <td>กข-1546</td>
+            <td>อุดร-ไทยอิสาณ</td>
+            <td>0856325658</td>
+            <td>อุดร</td>
+            <td>
+              <ion-button color="secondary" (click)="gotoDetailTruck()">ดูข้อมูล</ion-button>
+            </td>
+            <td>
+              <ion-button color="warning" (click)="gotoEditTruck()">แก้ไข</ion-button>
+            </td>
+          </tr>
+          <tr>
+              <td>Ca002</td>
+              <td>ทองดี มีชัย</td>
+              <td>กข-1546</td>
+              <td>อุดร-ไทยอิสาณ</td>
+              <td>0856325658</td>
+              <td>อุดร</td>
+            <td>
+              <ion-button color="secondary" (click)="gotoDetailTruck()">ดูข้อมูล</ion-button>
+            </td>
+            <td>
+              <ion-button color="warning" (click)="gotoEditTruck()">แก้ไข</ion-button>
+            </td>
+          </tr>
+          <tr>
+              <td>Ca003</td>
+              <td>ทองดี มีชัย</td>
+              <td>กข-1546</td>
+              <td>อุดร-ไทยอิสาณ</td>
+              <td>0856325658</td>
+              <td>อุดร</td>
+            <td>
+              <ion-button color="secondary" (click)="gotoDetailTruck()">ดูข้อมูล</ion-button>
+            </td>
+            <td>
+              <ion-button color="warning" (click)="gotoEditTruck()">แก้ไข</ion-button>
+            </td>
+          </tr>
+        </tbody>
+        </table>
+      </ion-segment>
+      </ion-row>
+    </ion-grid>
+
+    </ion-card>
+  
+  </ion-content>

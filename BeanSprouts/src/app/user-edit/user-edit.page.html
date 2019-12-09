@@ -8,18 +8,23 @@
     <ion-card class="ion-padding">
         <ion-row color="primary" justify-content-center>
           <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
-            <div text-center>
-              <h3>แก้ไขพนักงาน</h3>
+            <div text-center *ngIf="check == 1">
+              <h3>ข้อมูลพนักงาน</h3>
             </div>
+
+            <div text-center *ngIf="check == 2">
+                <h3>แก้ไขพนักงาน</h3>
+              </div>
+
             <div>
               <ion-label>Username</ion-label>
-              <ion-input type="text" placeholder="Username"></ion-input>
+              <ion-input class="input1" type="text" placeholder="Username"></ion-input>
               <ion-label>Password</ion-label>
-              <ion-input type="text" placeholder="Password"></ion-input>
+              <ion-input class="input1" type="text" placeholder="Password"></ion-input>
               <ion-label>ชื่อพนักงาน</ion-label>
-              <ion-input type="text" placeholder="ชื่อพนักงาน"></ion-input>
+              <ion-input class="input1" type="text" placeholder="ชื่อพนักงาน"></ion-input>
               <ion-label>เบอร์โทร</ion-label>
-              <ion-input type="text" placeholder="เบอร์โทร"></ion-input>
+              <ion-input class="input1" type="text" placeholder="เบอร์โทร"></ion-input>
               <ion-label>สิทธิ์</ion-label>
               <ion-select interface="popover" type="text" placeholder="เลือกสิทธิ์" >
                 <ion-select-option value="u">Accouting</ion-select-option>

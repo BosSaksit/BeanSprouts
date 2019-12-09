@@ -1,0 +1,115 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>orderList</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card class="ion-padding">
+    <ion-row>
+      <ion-col size="12" size-sm>
+        <ion-label>สาขา</ion-label>
+        <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" type="text" placeholder="เลือกสาขา">
+          <ion-select-option value="u">อุดร</ion-select-option>
+          <ion-select-option value="k">ขอนแก่น</ion-select-option>
+        </ion-select>
+      </ion-col>
+
+      <ion-col size="12" size-sm>
+        <ion-label>สาย</ion-label>
+        <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" type="text" placeholder="เลือกสาย">
+          <ion-select-option value="u">เทศบาล 2</ion-select-option>
+          <ion-select-option value="k">อุดร-ไทยอิสาน</ion-select-option>
+        </ion-select>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+        <ion-col size="12" size-sm text-end>
+            <ion-button color="primary">
+              <ion-icon name="search"></ion-icon>
+            </ion-button>
+          </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-row>
+    <ion-col size="2">
+      <ion-button color="primary" (click)="gotoAddOrder()">เพิ่มการสั่งซื้อ</ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-card class="ion-padding">
+    <ion-row>
+      <ion-col text-center>
+        <h1>รายการสั่งซื้อ</h1>
+      </ion-col>
+    </ion-row>
+
+    <ion-grid >
+
+    <ion-row>
+      <ion-segment scrollable>
+      <table class="fixed_header">
+        <thead>
+        <tr>
+          <th>รหัสการสั่งซื้อ</th>
+          <th>สาขา</th>
+          <th>สาย</th>
+          <th>วันที่สั่งซื้อ</th>
+          <th>สถานะการส่ง</th>
+          <th width="5%">ดูข้อมูล</th>
+          <th width="5%">แก้ไข</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>O001</td>
+          <td>อุดร</td>
+          <td>อุดร-ไทยอิสาณ</td>
+          <td>11/สิงหาคม/2562</td>
+          <td>ดำเนินการส่ง</td>
+          <td>
+            <ion-button color="secondary" (click)="gotoDetailOrder()">ดูข้อมูล</ion-button>
+          </td>
+          <td>
+            <ion-button color="warning" (click)="gotoEditOrder()">แก้ไข</ion-button>
+          </td>
+        </tr>
+        <tr>
+          <td>O002</td>
+          <td>อุดร</td>
+          <td>อุดร-ไทยอิสาณ</td>
+          <td>11/สิงหาคม/2562</td>
+          <td>ดำเนินการส่ง</td>
+          <td>
+            <ion-button color="secondary" (click)="gotoDetailOrder()">ดูข้อมูล</ion-button>
+          </td>
+          <td>
+            <ion-button color="warning" (click)="gotoEditOrder()">แก้ไข</ion-button>
+          </td>
+        </tr>
+        <tr>
+          <td>O003</td>
+          <td>อุดร</td> 
+          <td>อุดร-ไทยอิสาณ</td>
+          <td>11/สิงหาคม/2562</td>
+          <td>ส่งสำเร็จ</td>
+          <td>
+            <ion-button color="secondary" (click)="gotoDetailOrder()">ดูข้อมูล</ion-button>
+          </td>
+          <td>
+            <ion-button color="warning" (click)="gotoEditOrder()">แก้ไข</ion-button>
+          </td>
+        </tr>
+      </tbody>
+      </table>
+    </ion-segment>
+    </ion-row>
+  </ion-grid>
+
+  </ion-card>
+
+</ion-content>
+

@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -25,36 +25,65 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
-table, td, th,tr {
-    text-align: center;
-    tr:nth-child(even){background-color: #f2f2f2;}
-    tr:hover {background-color: #ddd;}
-  }
-  
-  table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  th {
-    height: 25px;
-  }
+table,
+td,
+th,
+tr {
+  text-align: center;
 
-  ion-label{
-    font-size: 20px;
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
   }
-
-  ion-input,ion-select,ion-select-option[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-    font-size: 15px;
+  tr:hover {
+    background-color: #ddd;
   }
+}
 
+th {
+  height: 45px;
+  background-color: palegoldenrod;
+}
 
+ion-label {
+  font-size: 20px;
+}
 
+.input1{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 15px;
+  height: 50px;
+  margin: auto;
+}
+
+ion-input td{
+  text-align: center;
+}
+
+ion-select,
+ion-datetime,
+ion-select-option,
+ion-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 15px;
+  height: 50px;
+  margin: auto;
+}
+
+.fixed_header th,
+.fixed_header td {
+  padding: 5px;
+  text-align: center;
+  width: 350px;
+  overflow: auto;
+}
 
 
 .invalid {
@@ -63,4 +92,7 @@ table, td, th,tr {
 
 .invalid-msg{
     color: red;
+}
+ion-card-header{
+  --background: rgb(228, 229, 153);
 }

@@ -5,5 +5,40 @@
 </ion-header>
 
 <ion-content>
+    <ion-card class="ion-padding">
+      <ion-row color="primary" justify-content-center>
+        <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+          <div text-center *ngIf="check == 1">
+            <h3>ข้อมูลพนักงานขับรถ</h3>
+          </div>
 
-</ion-content>
+          <div text-center *ngIf="check == 2">
+              <h3>แก้ไขพนักงานขับรถ</h3>
+            </div>
+          <div>
+            <ion-label>ทะเบียนรถ</ion-label>
+            <ion-input class="input1" type="text" placeholder="ทะเบียนรถ"></ion-input>
+            <ion-label>ชื่อคนขับ</ion-label>
+            <ion-input class="input1" type="text" placeholder="ชื่อคนขับ"></ion-input>
+            <ion-label>เบอร์โทร</ion-label>
+            <ion-input class="input1" type="text" placeholder="เบอร์โทร"></ion-input>
+  
+            <ion-label>สาขา</ion-label>
+            <ion-select type="text" placeholder="เลือกสาขา" >
+              <ion-select-option value="u">อุดร</ion-select-option>
+              <ion-select-option value="k">ขอนแก่น</ion-select-option>
+            </ion-select>
+
+            <ion-label>สาย</ion-label>
+            <ion-select type="text" placeholder="เลือกสาย" >
+              <ion-select-option value="u">อุดร-ไทยอิสาน</ion-select-option>
+              <ion-select-option value="k">เทศบาล 2</ion-select-option>
+            </ion-select>
+          </div>
+          <div>
+            <ion-button size="large" expand="block">แก้ไข</ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-content>

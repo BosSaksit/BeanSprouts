@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-user-edit',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserEditPage implements OnInit {
 
-  constructor() { }
+  check :any;
+  constructor(public activate:ActivatedRoute) { 
+    this.check = this.activate.snapshot.paramMap.get('check1');
+  }
 
   ngOnInit() {
   }

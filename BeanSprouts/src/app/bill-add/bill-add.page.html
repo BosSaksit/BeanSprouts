@@ -1,0 +1,135 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>billAdd</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-card class="ion-padding">
+    <ion-item>
+      <ion-row>
+        <h2>เพิ่มการเก็บเงิน</h2>
+      </ion-row>
+    </ion-item>
+    <ion-row>
+      <ion-col size="12" size-sm>
+        <ion-label>สาขา</ion-label>
+        <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" type="text" placeholder="เลือกสาขา">
+          <ion-select-option value="u">อุดร</ion-select-option>
+          <ion-select-option value="k">ขอนแก่น</ion-select-option>
+        </ion-select>
+      </ion-col>
+
+      <ion-col size="12" size-sm>
+        <ion-label>สาย</ion-label>
+        <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" type="text" placeholder="เลือกสาย">
+          <ion-select-option value="u">เทศบาล 2</ion-select-option>
+          <ion-select-option value="k">อุดร-ไทยอิสาน</ion-select-option>
+        </ion-select>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12" size-sm>
+
+        <ion-label>วันที่เริ่มต้น</ion-label>
+        <ion-datetime displayFormat="DD MMMM YYYY" placeholder="เลือกวันที่เริ่มต้น"></ion-datetime>
+
+      </ion-col>
+
+      <ion-col size="12" size-sm>
+
+        <ion-label>วันที่สิ้นสุด</ion-label>
+        <ion-datetime displayFormat="DD MMMM YYYY" placeholder="วันที่สิ้นสุด"></ion-datetime>
+
+      </ion-col>
+
+    </ion-row>
+    <ion-row>
+      <ion-col size="12" size-sm style="margin: auto;" text-end>
+        <ion-button color="primary">
+          <ion-icon name="search"></ion-icon>
+        </ion-button>
+
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card class="ion-padding">
+    <ion-row>
+      <ion-col text-center>
+        <h1>รายการเก็บเงินลูกค้า</h1>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <table class="fixed_header">
+        <thead>
+          <tr>
+            <th>
+              <ion-checkbox></ion-checkbox>All
+            </th>
+            <th>รหัสลูกค้า</th>
+            <th>ชื่อลูกค้า</th>
+            <th>สินค้า</th>
+            <th>จำนวน</th>
+            <th>สาขา</th>
+            <th>สาย</th>
+            <th>สถานะการชำระเงิน</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <ion-checkbox></ion-checkbox>
+            </td>
+            <td>Cs001</td>
+            <td>นายอุดม นำชัย</td>
+            <td>ถั่วงอก</td>
+            <td>10</td>
+            <td>อุดร</td>
+            <td>อุดร-ไทยอิสาณ</td>
+            <td>โอน</td>
+
+          </tr>
+          <tr>
+            <td>
+              <ion-checkbox></ion-checkbox>
+            </td>
+            <td>Cs002</td>
+            <td>นายอุดม นำชัย</td>
+            <td>ถั่วงอก</td>
+            <td>10</td>
+            <td>อุดร</td>
+            <td>อุดร-ไทยอิสาณ</td>
+            <td>จ่ายครบ</td>
+
+          </tr>
+          <tr>
+            <td>
+              <ion-checkbox></ion-checkbox>
+            </td>
+            <td>Cs003</td>
+            <td>นายอุดม นำชัย</td>
+            <td>ถั่วงอก</td>
+            <td>10</td>
+            <td>อุดร</td>
+            <td>อุดร-ไทยอิสาณ</td>
+            <td>โอน</td>
+
+          </tr>
+        </tbody>
+      </table>
+    </ion-row>
+  </ion-card>
+
+  <ion-row>
+    <ion-col size="2">
+      <ion-button color="success" (click)="presentAlert()">ตกลง</ion-button>
+    </ion-col>
+  </ion-row>
+
+
+</ion-content>

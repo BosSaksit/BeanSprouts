@@ -1,0 +1,110 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>CustomerList</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card class="ion-padding">
+    <ion-row>
+      <ion-col size="12" size-sm>
+        <ion-label>สาขา</ion-label>
+        <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" type="text" placeholder="เลือกสาขา">
+          <ion-select-option value="u">อุดร</ion-select-option>
+          <ion-select-option value="k">ขอนแก่น</ion-select-option>
+        </ion-select>
+      </ion-col>
+
+      <ion-col size="12" size-sm>
+        <ion-label>สาย</ion-label>
+        <ion-select [interfaceOptions]="customPopoverOptions" interface="popover" type="text" placeholder="เลือกสาย">
+          <ion-select-option value="u">เทศบาล 2</ion-select-option>
+          <ion-select-option value="k">อุดร-ไทยอิสาน</ion-select-option>
+        </ion-select>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12" size-sm text-end>
+        <ion-button color="primary">
+          <ion-icon name="search"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+
+  <ion-row>
+    <ion-col size="2">
+      <ion-button color="primary" (click)="gotoAddCustomer()">เพิ่มลูกค้า</ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-card class="ion-padding">
+    <ion-row>
+      <ion-col text-center>
+        <h1>รายชื่อลูกค้า</h1>
+      </ion-col>
+    </ion-row>
+
+    <ion-grid >
+
+      <ion-row>
+        <ion-segment scrollable>
+          <table class="fixed_header">
+            <thead>
+              <tr>
+                <th>รหัสลูกค้า</th>
+                <th>ชื่อลูกค้า</th>
+                <th>เบอร์โทร</th>
+                <th>ตลาด</th>
+                <th width="5%">ดูข้อมูล</th>
+                <th width="5%">แก้ไข</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cs001</td>
+                <td>ทองดี มีชัย</td>
+                <td>0865325478</td>
+                <td>ตลาดบ้านดอน</td>
+                <td>
+                  <ion-button color="secondary" (click)="gotoDetailCustomer()">ดูข้อมูล</ion-button>
+                </td>
+                <td>
+                  <ion-button color="warning" (click)="gotoEditCustomer()">แก้ไข</ion-button>
+                </td>
+              </tr>
+              <tr>
+                <td>Cs002</td>
+                <td>ทองดี มีชัย</td>
+                <td>0865325478</td>
+                <td>ตลาดบ้านดอน</td>
+                <td>
+                  <ion-button color="secondary" (click)="gotoDetailCustomer()">ดูข้อมูล</ion-button>
+                </td>
+                <td>
+                  <ion-button color="warning" (click)="gotoEditCustomer()">แก้ไข</ion-button>
+                </td>
+              </tr>
+              <tr>
+                <td>Cs003</td>
+                <td>ทองดี มีชัย</td>
+                <td>0865325478</td>
+                <td>ตลาดบ้านดอน</td>
+                <td>
+                  <ion-button color="secondary" (click)="gotoDetailCustomer()">ดูข้อมูล</ion-button>
+                </td>
+                <td>
+                  <ion-button color="warning" (click)="gotoEditCustomer()">แก้ไข</ion-button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </ion-segment>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+</ion-content>
