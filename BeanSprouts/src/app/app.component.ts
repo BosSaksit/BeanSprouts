@@ -13,7 +13,7 @@ import { CallapiService } from './service/callapi.service';
 })
 export class AppComponent {
 
-  public checkState:any;
+  public checkState: any;
   public appPages = [
     {
       title: 'Home',
@@ -36,14 +36,14 @@ export class AppComponent {
     private platform: Platform,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
-    public router:Router,
-    public callapi:CallapiService
+    public router: Router,
+    public callapi: CallapiService
   ) {
     // this.callapi.checkStateMenuBar = "1";
     this.callapi.checkStateMenuBar = this.checkState;
     console.log(this.callapi.checkStateMenuBar);
     console.log(this.checkState);
-    
+
     this.initializeApp();
   }
 
@@ -53,29 +53,40 @@ export class AppComponent {
       this.splashScreen.hide();
     });
   }
-  
-  gotoOrder(){
-    this.router.navigate(['/order']);
+
+  gotoOrder() {
+    this.router.navigate(['/order-list']);
   }
 
-  gotoShop(){
+  gotoShop() {
     this.router.navigate(['/shop-list']);
   }
 
-  gotoProduct(){
+  gotoProduct() {
     this.router.navigate(['/product-list']);
   }
 
-  gotoUser(){
+  gotoUser() {
     this.router.navigate(['/user-list']);
   }
 
-  gotoTransfer(){
+  gotoTransfer() {
     this.router.navigate(['/transfer']);
   }
 
-  gotodebtReduc(){
+  gotodebtReduc() {
     this.router.navigate(['/debtreduction-list']);
   }
+
+
+  // myFunction() {
+  //   var x = document.getElementById("myTopnav");
+  //   if (x.className === "topnav") {
+  //     x.className += " responsive";
+  //   } else {
+  //     x.className = "topnav";
+  //   }
+  // }
+
 
 }

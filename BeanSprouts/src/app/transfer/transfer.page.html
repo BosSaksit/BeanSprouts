@@ -5,95 +5,120 @@
 </ion-header>
 
 <ion-content padding>
-  <br>
-  <ion-row>
-    <ion-col>
-      <ion-item>
+  <ion-card class="ion-padding">
+    <ion-row>
+      <ion-col size="12" size-sm>
         <ion-label>สาขา</ion-label>
-       <ion-select interface="popover" value="brown" okText="ตกลง">
+        <ion-select interface="popover" value="brown" okText="ตกลง">
           <ion-select-option value="brown">อุดรธานี</ion-select-option>
           <ion-select-option value="blonde">ขอนแก่น</ion-select-option>
           <ion-select-option value="black">สกลนคร</ion-select-option>
           <ion-select-option value="red">หนองคาย</ion-select-option>
         </ion-select>
-      </ion-item>
-    </ion-col>
-    <ion-col>
-      <ion-item>
+      </ion-col>
+
+      <ion-col size="12" size-sm>
         <ion-label>สาย</ion-label>
-       <ion-select interface="popover" value="brown" okText="ตกลง">
+        <ion-select interface="popover" value="brown" okText="ตกลง">
           <ion-select-option value="brown">01</ion-select-option>
           <ion-select-option value="blonde">02</ion-select-option>
           <ion-select-option value="black">03</ion-select-option>
           <ion-select-option value="red">04</ion-select-option>
         </ion-select>
-      </ion-item>
-    </ion-col>
-    <ion-col>
-      <ion-item>
-        <ion-label>ลูกค้า</ion-label>
-       <ion-select interface="popover" value="brown" okText="ตกลง">
-          <ion-select-option value="brown">เจ้ต่าย</ion-select-option>
-          <ion-select-option value="blonde">เฮียไก่</ion-select-option>
-          <ion-select-option value="black">ป้าแดง</ion-select-option>
-          <ion-select-option value="red">หนูเล็ก</ion-select-option>
-        </ion-select>
-      </ion-item>
-    </ion-col>
-  </ion-row>
+      </ion-col>
 
-  <ion-card>
-    <h2 style="color: black" text-center>รายการบิลเก็บเงิน</h2>
-    <ion-row text-center style="color: black">
       <ion-col>
-        <h4>รหัสบิล</h4>
+          <ion-label>ลูกค้า</ion-label>
+          <ion-select interface="popover" value="brown" okText="ตกลง">
+            <ion-select-option value="brown">เจ้ต่าย</ion-select-option>
+            <ion-select-option value="blonde">เฮียไก่</ion-select-option>
+            <ion-select-option value="black">ป้าแดง</ion-select-option>
+            <ion-select-option value="red">หนูเล็ก</ion-select-option>
+          </ion-select>
       </ion-col>
-      <ion-col>
-        <h4>วันที่</h4>
-      </ion-col>
-      <ion-col>
-        <h4>ยอดบิล</h4>
-      </ion-col>
-      <ion-col>
-        <h4>สถานะการชำระ</h4>
-      </ion-col>
-      <ion-col>
-        <h4>วันที่เก็บเงิน</h4>
-      </ion-col>
-      <ion-col>
-        <h4>ดูข้อมูล</h4>
-      </ion-col>
-      <ion-col>
-        <h4>แจ้งโอน</h4>
+
+    </ion-row>
+
+  </ion-card>
+
+  <ion-card class="ion-padding">
+    <ion-row>
+      <ion-col text-center>
+        <h1>รายการบิลเก็บเงิน</h1>
       </ion-col>
     </ion-row>
 
-    <ion-row text-center style="color: black">
-      <ion-col>
-        <ion-label>b-123011</ion-label>
-      </ion-col>
-      <ion-col>
-        <ion-label>2019-10-11</ion-label>
-      </ion-col>
-      <ion-col>
-        <ion-label>1000</ion-label>
-      </ion-col>
-      <ion-col>
-        <ion-label>ยังไม่ชำระ</ion-label>
-      </ion-col>
-      <ion-col>
-        <ion-label>-</ion-label>
-      </ion-col>
-      <ion-col>
-        <ion-button size="small">
-          <ion-icon slot="icon-only" name="eye"></ion-icon>
-        </ion-button>
-      </ion-col>
-      <ion-col>
-        <ion-button size="small">
-         โอน
-        </ion-button>
-      </ion-col>
-    </ion-row>
+    <ion-grid>
+      <ion-row>
+        <ion-segment scrollable>
+          <table class="fixed_header">
+            <thead>
+              <tr>
+                <th>รหัสบิล</th>
+                <th>วันที่</th>
+                <th>ยอดบิล</th>
+                <th>สถานะการชำระ</th>
+                <th>วันที่เก้บเงิน</th>
+                <th width="5%">ดูข้อมูล</th>
+                <th width="5%">แจ้งโอน</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ฺb-123001</td>
+                <td>2019-10-11</td>
+                <td>1000</td>
+                <td>ยังไม่ชำระ</td>
+                <td>-</td>
+                <td>
+                  <ion-button size="small">
+                    <ion-icon slot="icon-only" name="eye"></ion-icon>
+                  </ion-button>
+                </td>
+                <td>
+                  <ion-button size="small">
+                    โอน
+                  </ion-button>
+                </td>
+              </tr>
+              <tr>
+                <td>ฺb-123001</td>
+                <td>2019-10-11</td>
+                <td>1000</td>
+                <td>ยังไม่ชำระ</td>
+                <td>-</td>
+                <td>
+                  <ion-button size="small">
+                    <ion-icon slot="icon-only" name="eye"></ion-icon>
+                  </ion-button>
+                </td>
+                <td>
+                  <ion-button size="small">
+                    โอน
+                  </ion-button>
+                </td>
+              </tr>
+              <tr>
+                <td>ฺb-123001</td>
+                <td>2019-10-11</td>
+                <td>1000</td>
+                <td>ยังไม่ชำระ</td>
+                <td>-</td>
+                <td>
+                  <ion-button size="small">
+                    <ion-icon slot="icon-only" name="eye"></ion-icon>
+                  </ion-button>
+                </td>
+                <td>
+                  <ion-button size="small">
+                    โอน
+                  </ion-button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </ion-segment>
+      </ion-row>
+    </ion-grid>
   </ion-card>
 </ion-content>

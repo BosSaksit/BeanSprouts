@@ -24,4 +24,6 @@ export class BillAddPage implements OnInit {
     await alert.present();
   }
 
+  
+
 }

@@ -56,6 +56,12 @@
       </ion-row>
      </ion-card>
 
+     <ion-item lines="none" >
+        <ion-button size="default" (click)="gopageStoreAdd()">
+        <ion-icon slot="icon-only" name="add-circle-outline"></ion-icon>
+        </ion-button>
+        </ion-item>
+
      <ion-card class="ion-padding">
         <ion-row>
             <ion-col text-center>
@@ -64,7 +70,7 @@
           </ion-row>
       
           <ion-row>
-            <table>
+            <table class="fixed_header">
               <tr>
                 <th>รหัสสินค้า</th>
                 <th>ชื่อสินค้า</th>
@@ -94,11 +100,7 @@
                    </tr>
             </table>
           </ion-row>
-          <ion-item lines="none" >
-              <ion-button  slot="end" size="default" (click)="gopageStoreAdd()">
-              <ion-icon slot="icon-only" name="add-circle-outline"></ion-icon>
-              </ion-button>
-              </ion-item>
+       
 
 
      </ion-card>

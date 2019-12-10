@@ -1,5 +1,5 @@
 <ion-app>
-
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <!-- <ion-menu type="overlay">
       <ion-header>
         <ion-toolbar>
@@ -20,8 +20,41 @@
       </ion-content>
     </ion-menu> -->
 
-  <ion-header>
-    <ion-toolbar *ngIf="checkState != 1" color="warning">
+    <!-- <div class="topnav" id="myTopnav" *ngIf="checkState != 1">
+      
+      <a (click)="gotoOrder()" color="dark" shape="round" fill="clear">หน้าหลัก</a>
+      
+      <a (click)="gotoOrder()" color="dark" shape="round" fill="clear">สั่งซื้อ</a>
+      
+      
+      <a (click)="gotoTransfer()" shape="round" color="dark" fill="clear">แจ้งโอน</a>
+      
+      
+      <a (click)="gotodebtReduc()" shape="round" color="dark" fill="clear">การลดหนี้</a>
+      
+      
+      <a (click)="gotoShop()" color="dark" shape="round" fill="clear">สาขา</a>
+      
+      
+      <a (click)="gotoProduct()" color="dark" shape="round" fill="clear">สินค้า</a>
+
+      
+      <a (click)="gotoUser()" color="dark" shape="round" fill="clear">พนักงาน</a>
+      
+      
+      <a color="dark" shape="round" fill="clear">
+        <ion-icon slot="start" name="person"></ion-icon>
+        Admin
+      </a>
+      
+      <a href="javascript:void(0);" class="icon" (click)="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div> -->
+    
+    
+    <ion-header>
+    <ion-toolbar *ngIf="checkState != 1" color="warning" > 
       <ion-row>
         <ion-col>
           <ion-button (click)="gotoOrder()" color="dark" shape="round" fill="clear">สั่งซื้อ</ion-button>
@@ -41,7 +74,7 @@
        <ion-col>
         <ion-button (click)="gotoUser()" color="dark" shape="round" fill="clear">พนักงาน</ion-button>
        </ion-col>
-        <ion-col text-end size="6">
+        <ion-col text-end >
           <ion-button color="dark" shape="round" fill="clear">
             <ion-icon slot="start" name="person"></ion-icon>
             Admin
@@ -50,7 +83,9 @@
       </ion-row>
     </ion-toolbar>
   </ion-header>
-  
+
+
+
   <!-- <ion-tabs>
     <ion-tab-bar slot="top">
       <ion-row>
