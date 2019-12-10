@@ -57,7 +57,6 @@ const routes: Routes = [
   { path: 'truck-add', loadChildren: './truck-add/truck-add.module#TruckAddPageModule' },
   { path: 'truck-edit', loadChildren: './truck-edit/truck-edit.module#TruckEditPageModule' },
   { path: 'order', loadChildren: './order/order.module#OrderPageModule' },
-  { path: 'mainmenu', loadChildren: './mainmenu/mainmenu.module#MainmenuPageModule' },
   { path: 'loginpage', loadChildren: './loginpage/loginpage.module#LoginpagePageModule' },
   { path: 'store-list', loadChildren: './store-list/store-list.module#StoreListPageModule' },
   { path: 'store-add', loadChildren: './store-add/store-add.module#StoreAddPageModule' },

@@ -53,6 +53,7 @@ export class AppComponent {
       this.splashScreen.hide();
     });
   }
+<<<<<<< HEAD
 
   gotoOrder() {
     this.router.navigate(['/order-list']);
@@ -77,6 +78,8 @@ export class AppComponent {
   gotodebtReduc() {
     this.router.navigate(['/debtreduction-list']);
   }
+=======
+>>>>>>> bos
 
 
   // myFunction() {
