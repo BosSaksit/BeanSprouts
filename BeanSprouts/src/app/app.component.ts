@@ -53,29 +53,5 @@ export class AppComponent {
       this.splashScreen.hide();
     });
   }
-  
-  gotoOrder(){
-    this.router.navigate(['/order']);
-  }
-
-  gotoShop(){
-    this.router.navigate(['/shop-list']);
-  }
-
-  gotoProduct(){
-    this.router.navigate(['/product-list']);
-  }
-
-  gotoUser(){
-    this.router.navigate(['/user-list']);
-  }
-
-  gotoTransfer(){
-    this.router.navigate(['/transfer']);
-  }
-
-  gotodebtReduc(){
-    this.router.navigate(['/debtreduction-list']);
-  }
 
 }
