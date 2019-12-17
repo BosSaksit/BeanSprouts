@@ -1,5 +1,8 @@
 <ion-header>
   <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
     <ion-title>order-add</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -388,7 +391,7 @@
               </tr>
               <br>
               <tr>
-                <th colspan="5"></th>
+                <th colspan="5">สรุปยอดการสั่งซื้อ</th>
                 <th>ถั่วงอก</th>
                 <th>เส้นใหญ่ดอกบัว</th>
                 <th>เส้นเล็กดอกบัว</th>
@@ -462,7 +465,7 @@
   <ion-row>
     <ion-button color="tertiary">สรุปยอด</ion-button>
     <ion-button color="success" (click)="presentAlert()">บันทึก</ion-button>
-    <ion-button color="primary">พิมพ์</ion-button>
+    <!-- <ion-button color="primary">พิมพ์</ion-button> -->
   </ion-row>
 
 </ion-content>

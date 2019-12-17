@@ -14,7 +14,7 @@ export class LoginpagePage implements OnInit {
   }
 
   gotoMainmenu() {
-    this.router.navigate(['/mainmenu']);
+    this.router.navigate(['/order-list']);
   }
   
 }

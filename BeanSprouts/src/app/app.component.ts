@@ -53,33 +53,6 @@ export class AppComponent {
       this.splashScreen.hide();
     });
   }
-<<<<<<< HEAD
-
-  gotoOrder() {
-    this.router.navigate(['/order-list']);
-  }
-
-  gotoShop() {
-    this.router.navigate(['/shop-list']);
-  }
-
-  gotoProduct() {
-    this.router.navigate(['/product-list']);
-  }
-
-  gotoUser() {
-    this.router.navigate(['/user-list']);
-  }
-
-  gotoTransfer() {
-    this.router.navigate(['/transfer']);
-  }
-
-  gotodebtReduc() {
-    this.router.navigate(['/debtreduction-list']);
-  }
-=======
->>>>>>> bos
 
 
   // myFunction() {

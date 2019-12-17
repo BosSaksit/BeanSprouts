@@ -39,7 +39,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'shop-list',
+    redirectTo: 'loginpage',
     pathMatch: 'full'
   },
   {
@@ -80,7 +80,8 @@ const routes: Routes = [
   { path: 'order-list', loadChildren: './order-list/order-list.module#OrderListPageModule' },
   { path: 'order-add', loadChildren: './order-add/order-add.module#OrderAddPageModule' },
   { path: 'order-detail', loadChildren: './order-detail/order-detail.module#OrderDetailPageModule' },
-  { path: 'order-edit', loadChildren: './order-edit/order-edit.module#OrderEditPageModule' }
+  { path: 'order-edit', loadChildren: './order-edit/order-edit.module#OrderEditPageModule' },  { path: 'menu-in-shop', loadChildren: './menu-in-shop/menu-in-shop.module#MenuInShopPageModule' }
+
 
 
 ];

@@ -11,6 +11,7 @@ export class CallapiService {
   public static host:string = "https://localhost:5001/api/";
 
   public checkStateMenuBar : any;
+  public getNameShop:string;
 
   constructor(public http:HttpClient) { 
     this.checkStateMenuBar = "1";
