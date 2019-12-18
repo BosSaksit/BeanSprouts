@@ -1,30 +1,37 @@
 <ion-header>
-    <ion-toolbar color="warning">
-      <ion-row>
-        <ion-col size="1">
-          <ion-button (click)="gotoOrder()" color="dark" shape="round" fill="clear">สั่งซื้อ</ion-button>
-        </ion-col>
-        <ion-col size="1">
-          <ion-button (click)="gotoTransfer()" shape="round" color="dark" fill="clear">แจ้งโอน</ion-button>
-        </ion-col>
-        <ion-col size="1">
-          <ion-button (click)="gotodebtReduc()" shape="round" color="dark" fill="clear">การลดหนี้</ion-button>
-        </ion-col>
-        <ion-col size="1">
-          <ion-button (click)="presentAlertCheckbox()" color="dark" shape="round" fill="clear">สาขา</ion-button>
-        </ion-col>
-        <ion-col size="1">
-          <ion-button (click)="gotoProduct()" color="dark" shape="round" fill="clear">สินค้า</ion-button>
-        </ion-col>
-        <ion-col size="1">
-          <ion-button (click)="gotoUser()" color="dark" shape="round" fill="clear">พนักงาน</ion-button>
-        </ion-col>
-        <ion-col text-end>
-          <ion-button color="dark" shape="round" fill="clear">
-            <ion-icon slot="start" name="person"></ion-icon>
-            Admin
+  <ion-toolbar color="warning">
+    <ion-row>
+      <ion-col size="1">
+        <ion-button (click)="gotoOrder()" color="dark" shape="round" fill="clear">สั่งซื้อ</ion-button>
+      </ion-col>
+      <ion-col size="1">
+        <ion-button (click)="gotoTransfer()" shape="round" color="dark" fill="clear">แจ้งโอน</ion-button>
+      </ion-col>
+      <ion-col size="1">
+        <ion-button (click)="gotodebtReduc()" shape="round" color="dark" fill="clear">การลดหนี้</ion-button>
+      </ion-col>
+      <ion-col size="1">
+        <ion-button (click)="presentAlertCheckbox()" color="dark" shape="round" fill="clear">สาขา</ion-button>
+      </ion-col>
+      <ion-col size="1">
+        <ion-button (click)="gotoProduct()" color="dark" shape="round" fill="clear">สินค้า</ion-button>
+      </ion-col>
+      <ion-col size="1">
+        <ion-button (click)="gotoUser()" color="dark" shape="round" fill="clear">พนักงาน</ion-button>
+      </ion-col>
+      <ion-col size="1">
+        <ion-button (click)="gotoSummaryReport()" color="dark" shape="round" fill="clear">รายงานสรุป</ion-button>
+      </ion-col>
+      <ion-col text-end>
+        <ion-button color="dark" shape="round" fill="clear">
+          <ion-icon slot="start" name="person"></ion-icon>
+          Center
+        </ion-button>
+        <ion-button fill="clear" (click)="gotoLogout()">
+            <ion-icon color="danger" slot="icon-only" name="log-out"></ion-icon>
           </ion-button>
-        </ion-col>
-      </ion-row>
-    </ion-toolbar>
-  </ion-header>
+      </ion-col>
+      
+    </ion-row>
+  </ion-toolbar>
+</ion-header>

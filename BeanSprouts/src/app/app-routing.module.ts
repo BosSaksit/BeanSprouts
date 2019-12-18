@@ -80,7 +80,8 @@ const routes: Routes = [
   { path: 'order-list', loadChildren: './order-list/order-list.module#OrderListPageModule' },
   { path: 'order-add', loadChildren: './order-add/order-add.module#OrderAddPageModule' },
   { path: 'order-detail', loadChildren: './order-detail/order-detail.module#OrderDetailPageModule' },
-  { path: 'order-edit', loadChildren: './order-edit/order-edit.module#OrderEditPageModule' },  { path: 'menu-in-shop', loadChildren: './menu-in-shop/menu-in-shop.module#MenuInShopPageModule' }
+  { path: 'order-edit', loadChildren: './order-edit/order-edit.module#OrderEditPageModule' },  { path: 'menu-in-shop', loadChildren: './menu-in-shop/menu-in-shop.module#MenuInShopPageModule' },
+  { path: 'summary-report', loadChildren: './summary-report/summary-report.module#SummaryReportPageModule' }
 
 
 

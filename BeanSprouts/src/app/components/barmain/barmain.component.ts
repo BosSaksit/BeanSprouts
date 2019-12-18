@@ -37,6 +37,14 @@ export class BarmainComponent implements OnInit {
     this.router.navigate(['/debtreduction-list']);
   }
 
+  gotoSummaryReport(){
+    this.router.navigate(['/summary-report']);
+  }
+
+  gotoLogout(){
+    this.router.navigate(['/loginpage']);
+  }
+
   async presentAlertCheckbox() {
     const alert = await this.alertController.create({
       header: 'กรุณาเลือกสาขา',
