@@ -11,7 +11,7 @@
     <h2 style="color: black">สรุปการเงินวันนี้</h2>
     <ion-row>
       <ion-col>
-        <ion-card style="background-color: aqua; color: black">
+        <ion-card style="background-color: aqua; color: black" (click)="gotoInfoCost()">
             <br>
             <ion-label>ต้นทุนวันนี้</ion-label>
             <br><br>
@@ -21,9 +21,9 @@
       </ion-col>
 
       <ion-col>
-          <ion-card style="background-color: aqua; color: black">
+          <ion-card style="background-color: aqua; color: black" (click)="gotoInfoSellCredit()">
               <br>
-              <ion-label>ยอดขายปกติวันนี้</ion-label>
+              <ion-label>ยอดขายเชื่อวันนี้</ion-label>
               <br><br>
               <ion-label>122800</ion-label>
               <br><br>
@@ -31,7 +31,7 @@
         </ion-col>
 
         <ion-col>
-            <ion-card style="background-color: aqua; color: black">
+            <ion-card style="background-color: aqua; color: black" (click)="gotoInfoSellOnCash()">
                 <br>
                 <ion-label>ยอดขายสดวันนี้</ion-label>
                 <br><br>
@@ -41,7 +41,7 @@
           </ion-col>
 
            <ion-col>
-        <ion-card style="background-color: aqua; color: black">
+        <ion-card style="background-color: aqua; color: black" (click)="gotoInfoDebt()">
             <br>
             <ion-label>ยอดค้างชำระวันนี้</ion-label>
             <br><br>
@@ -52,7 +52,7 @@
     </ion-row>
   </ion-card>
 
-    <ion-card text-center class="ion-padding">
+    <!-- <ion-card text-center class="ion-padding">
         <h2 style="color: black">จำนวนสินค้าคงเหลือในระบบทั้งหมด</h2>
         <ion-grid>
           <ion-row>
@@ -127,10 +127,10 @@
            </ion-col>
           </ion-row>
         </ion-grid>
-      </ion-card>
+      </ion-card> -->
 
   <ion-card text-center class="ion-padding">
-    <h2 style="color: black">จำนวนสินค้าที่ขายในวันนี้</h2>
+    <h2 style="color: black">จำนวนสินค้าที่ขายเชื่อในวันนี้</h2>
     <ion-grid>
       <ion-row>
         <ion-col>
@@ -282,6 +282,6 @@
         </ion-row>
       </ion-grid>
     </ion-card>
-    <ion-button color="secondary">Secondary</ion-button>
+    <!-- <ion-button color="secondary">Secondary</ion-button> -->
   <ion-button color="secondary">บันทึกข้อมูลและออกใบสรุป</ion-button>
 </ion-content>

@@ -9,15 +9,11 @@ import { IonInfiniteScroll } from '@ionic/angular';
   styleUrls: ['./user-list.page.scss'],
 })
 export class UserListPage implements OnInit {
-
+  
+  check :any;
   constructor(public router:Router, public callapi:CallapiService) { 
     this.callapi.checkStateMenuBar = "1";
   }
-
-  check :any;
-
-  
-  
 
   ngOnInit() {
   }

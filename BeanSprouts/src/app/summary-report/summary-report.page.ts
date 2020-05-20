@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-summary-report',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SummaryReportPage implements OnInit {
 
-  constructor() { }
+  constructor(public router:Router) { }
 
   ngOnInit() {
+  }
+
+  gotoInfoCost(){
+    this.router.navigate(['/info-cost']);
+  }
+
+  gotoInfoDebt(){
+    this.router.navigate(['/info-debt']);
+  }
+
+  gotoInfoSellOnCash(){
+    this.router.navigate(['/info-selloncash']);
+  }
+
+  gotoInfoSellCredit(){
+    this.router.navigate(['/info-sellcredit']);
   }
 
 }

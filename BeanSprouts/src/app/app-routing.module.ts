@@ -81,7 +81,11 @@ const routes: Routes = [
   { path: 'order-add', loadChildren: './order-add/order-add.module#OrderAddPageModule' },
   { path: 'order-detail', loadChildren: './order-detail/order-detail.module#OrderDetailPageModule' },
   { path: 'order-edit', loadChildren: './order-edit/order-edit.module#OrderEditPageModule' },  { path: 'menu-in-shop', loadChildren: './menu-in-shop/menu-in-shop.module#MenuInShopPageModule' },
-  { path: 'summary-report', loadChildren: './summary-report/summary-report.module#SummaryReportPageModule' }
+  { path: 'summary-report', loadChildren: './summary-report/summary-report.module#SummaryReportPageModule' },
+  { path: 'info-cost', loadChildren: './info-cost/info-cost.module#InfoCostPageModule' },
+  { path: 'info-debt', loadChildren: './info-debt/info-debt.module#InfoDebtPageModule' },
+  { path: 'info-selloncash', loadChildren: './info-selloncash/info-selloncash.module#InfoSelloncashPageModule' },
+  { path: 'info-sellcredit', loadChildren: './info-sellcredit/info-sellcredit.module#InfoSellcreditPageModule' }
 
 
 

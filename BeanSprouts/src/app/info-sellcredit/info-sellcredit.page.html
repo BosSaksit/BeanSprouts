@@ -1,0 +1,91 @@
+<ion-header>
+  <ion-toolbar color="warning">
+      <ion-buttons slot="start">
+          <ion-back-button color="dark"></ion-back-button>
+        </ion-buttons>
+    <ion-title color="dark">infoSellcredit (ยอดขายเชื่อแต่ละสาขา)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card class="ion-padding">
+        <ion-row>
+            <ion-col>
+                <ion-label>สาขา</ion-label>
+                <ion-select interface="popover" value="brown" okText="ตกลง">
+                  <ion-select-option value="brown">อุดรธานี</ion-select-option>
+                  <ion-select-option value="blonde">ขอนแก่น</ion-select-option>
+                  <ion-select-option value="black">สกลนคร</ion-select-option>
+                  <ion-select-option value="red">หนองคาย</ion-select-option>
+                </ion-select>
+              </ion-col>
+              <ion-col>
+                <ion-label>สาย</ion-label>
+                <ion-select interface="popover" value="brown" okText="ตกลง">
+                  <ion-select-option value="brown">01</ion-select-option>
+                  <ion-select-option value="blonde">02</ion-select-option>
+                  <ion-select-option value="black">03</ion-select-option>
+                  <ion-select-option value="red">04</ion-select-option>
+                </ion-select>
+              </ion-col>
+    
+          <ion-col size="1" text-center>
+            <ion-button color="primary" style="margin-top: 30px">
+              <ion-icon name="search"></ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    
+      <ion-card class="ion-padding">
+        <ion-row>
+          <ion-col text-center>
+            <h1>ยอดขายเชื่อแต่ละสาขา</h1>
+          </ion-col>
+        </ion-row>
+    
+        <ion-row>
+          <table class="fixed_header">
+            <thead>
+              <tr>
+                <th>สาขา</th>
+                <th>สาย</th>
+                <th>วันที่</th>
+                <th>สินค้า</th>
+                <th>ยอดขายเชื่อ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>อุดร</td>
+                <td>01</td>
+                <td>2019-11-22</td>
+                <td>เส้นเล็ก</td>
+                <td>4500</td>
+              </tr>
+              <tr>
+                <td>อุดร</td>
+                <td>01</td>
+                <td>2019-11-22</td>
+                <td>เส้นใหญ่</td>
+                <td>2000</td>
+              </tr>
+              <tr>
+                <td>อุดร</td>
+                <td>02</td>
+                <td>2019-11-22</td>
+                <td>เส้นเล็ก</td>
+                <td>1000</td>
+              </tr>
+              <tr>
+                <td>อุดร</td>
+                <td>04</td>
+                <td>2019-11-22</td>
+                <td>เส้นบะหมี่</td>
+                <td>500</td>
+              </tr>
+            </tbody>
+          </table>
+        </ion-row>
+      </ion-card>
+</ion-content>
